@@ -1,20 +1,4 @@
-<?php
-//load the database configuration file
 
-if(!empty($_GET['login'])){
-    switch($_GET['login']){
-
-        case 'err':
-            $statusMsgClass = 'alert-danger';
-            $statusMsg = 'Some problem occurred, please try again.';
-            break;
-
-        default:
-            $statusMsgClass = '';
-            $statusMsg = '';
-    }
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
