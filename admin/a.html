@@ -1,0 +1,8 @@
+
+
+
+
+
+
+<input type="button" value="Imprimer cette page" onClick="window.print()">
+SELECT e.cin,e.nom,e.prenom,e.specialite, l.idexemplaire from etudiants e , emprunt l where e.id in (SELECT DISTINCT(idetudiant) from emprunt ) and l.idetudiant=e.id 
